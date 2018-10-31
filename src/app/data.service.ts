@@ -19,7 +19,7 @@ contacts:Contact[]=[
   constructor(private http:HttpClient) { }
   getContactData():Observable<Contact[]>{    //return type is contact[]
     
-   return this.http.get("https://anandcbook.herokuapp.com/contacts/");
+   return this.http.get<Contact[]>("https://anandcbook.herokuapp.com/contacts/");
    
   }
 }
