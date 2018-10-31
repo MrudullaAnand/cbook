@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     for (var i = 0; i < arr.length; i++) {
       mat[i] = arr.splice(0, n);
     }
-    mat[i] = arr.splice(0.arr.length);
+    mat[i] = arr.splice(0,arr.length);
     return mat;
   }
 }
